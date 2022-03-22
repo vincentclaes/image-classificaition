@@ -1,7 +1,16 @@
-# multimodal-modeling-image-to-text
+# Image Classification
 
-Trying multimodal modeling image to text, it turned out not to be that easy.
-I ended up doing image classification and fine tuned a model in the mit indoor scenes dataset.
+Fine-tuning ViT model [google/vit-base-patch16-224-in21k](https://huggingface.co/google/vit-base-patch16-224-in21k) on a dataset containing indoor scenes.
 
-- look at [image-classification.ipynb](image-classification.ipynb) to see how we use a pretrained model for image classification.
-- look at [image-classification-finetuning.ipynb](image-classification-finetuning.ipynb) to see how we finetune our model on a datatset.
+## Input
+
+- Data comes from kaggle: https://www.kaggle.com/itsahmad/indoor-scenes-cvpr-2019
+- Got inspiration for the code from: https://github.com/NielsRogge/Transformers-Tutorials/tree/master/VisionTransformer
+
+## Code
+
+- look at [image-classification-finetuning.ipynb](image-classification-finetuning.ipynb) to see how we finetune our model.
+
+##  Finetuned Model
+
+- https://huggingface.co/vincentclaes/mit-indoor-scenes
